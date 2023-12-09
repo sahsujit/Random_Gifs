@@ -4,7 +4,7 @@ import Spinner from "./Spinner";
 
 
 const Tag = () => {
-  const [tag, setTag] = useState("Virat Kohli");
+  const [tag, setTag] = useState("");
   // const [gif, setGif] = useState("");
   // const [loading, setLoading] = useState(false);
 
@@ -34,7 +34,9 @@ const Tag = () => {
         loading ? (<Spinner />) : (<img src= {gif} width="450" />)
       }
 
-      <input type="text" className="w-10/12 text-lg py-2 rounded-lg capitalize mb-[3px] text-center"
+      <input
+        placeholder="Generate Gifs"
+          type="text" className="w-10/12 text-lg py-2 rounded-lg capitalize mb-[3px] text-center"
        onChange={(event) => setTag(event.target.value)} value={tag} />
 
       <button
