@@ -7,7 +7,7 @@ const {gif, loading, fetchData} = useGif();
   return (
     <div className='w-1/2 bg-green-500  border border-black rounded-lg
     flex flex-col items-center gap-y-5'>
-        <h1 className='underline font-bold text-xl mt-[15px] uppercase'>A Random Gif</h1>
+        <h1 className='underline font-bold text-xl mt-[15px]  text-center  uppercase'>A Random Gif</h1>
         {
             loading ? (<Spinner/>) :
              ( <img src={gif} width="450"/>)
